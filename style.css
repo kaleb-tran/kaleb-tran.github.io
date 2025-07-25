@@ -7,14 +7,14 @@ html, body {
 }
 
 .header {
-    background-color: #121214;
+    background-color: #441387;
     text-align: left;
     padding: 20px;
 }
 
 .navbar {
     overflow: hidden;
-    background-color: #1f1422;
+    background-color: #2c1e30;
 }
 
 .navbar a {
@@ -27,7 +27,7 @@ html, body {
 }
 
 .navbar a:hover {
-  background-color: #ddd;
+  background-color: #b58de2;
   color: black;
 }
 
@@ -43,6 +43,12 @@ html, body {
   content: "";
   display: table;
   clear: both;
+}
+
+#about {
+  background-color: #2c1e30;
+  border-left: 5px solid #b58de2;
+  padding: 1px 10px;
 }
 
 @media screen and (max-width: 600px) {
