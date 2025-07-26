@@ -7,9 +7,23 @@ html, body {
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #441387;
-    text-align: left;
-    padding: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.header h1,
+.header p {
+  margin: 0;
+}
+
+.header .email {
+  margin-left: auto;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .navbar {
