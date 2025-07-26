@@ -51,6 +51,27 @@ html, body {
   padding: 1px 10px;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 0 auto;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #2c0642;
+}
+
+.projects > div {
+  background-color: #2c0642;
+  border: 1px solid #441387;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.projects h3 {
+  margin-top: 0;
+}
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
