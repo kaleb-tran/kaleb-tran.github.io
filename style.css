@@ -32,12 +32,12 @@ html, body {
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: #2c1e30;
+  display: flex;
+  align-items: center;
+  background-color: #2c1e30;
 }
 
 .navbar a {
-  float: left;
   display: block;
   color: white;
   text-align: center;
@@ -48,6 +48,37 @@ html, body {
 .navbar a:hover {
   background-color: #b58de2;
   color: black;
+}
+
+.navbar .dropdown-container {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3d3141;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.dropdown a {
+  display: block;
+  text-align: left;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+.dropdown a:hover {
+  background-color: #b58de2;
+  color: black;
+}
+
+.navbar .dropdown-container:hover .dropdown {
+  display: block;
 }
 
 .column {
