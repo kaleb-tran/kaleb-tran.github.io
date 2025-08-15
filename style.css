@@ -11,7 +11,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     background-color: #441387;
-    padding: 40px;
+    padding: 36px;
     flex-wrap: wrap;
 }
 
@@ -132,6 +132,10 @@ html, body {
 
 #project-display {
   grid-template-columns: minmax(400px, 1fr) 400px;
+}
+
+.link-desc {
+  margin-left: 8px;
 }
 
 @media screen and (max-width: 820px) {
