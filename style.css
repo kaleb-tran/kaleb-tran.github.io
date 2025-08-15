@@ -108,7 +108,7 @@ html, body {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin: 0 auto;
   gap: 20px;
-  padding: 0px 20px;
+  padding: 0px 20px 20px;
   border-bottom: 1px solid #2c0642;
 }
 
@@ -117,7 +117,7 @@ html, body {
   border: 1px solid #441387;
   padding: 16px;
   border-radius: 8px;
-  text-align: center;
+  text-align: left;
 }
 
 .projects h3 {
@@ -130,12 +130,18 @@ html, body {
   float: left;
 }
 
+#project-display {
+  grid-template-columns: minmax(400px, 1fr) 400px;
+}
+
+@media screen and (max-width: 820px) {
+  #project-display {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
-  }
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
   }
 }
