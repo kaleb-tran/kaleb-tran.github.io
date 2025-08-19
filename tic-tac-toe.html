@@ -4,9 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Tic-Tac-Toe</title>
-  <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+  <link rel="stylesheet" href="style.css" />
   <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
   <style>
+    html, body {
+      padding: 0px 5px;
+      background-color: #2c0642;
+    }
     #board {
       display: grid;
       grid-template-columns: repeat(3, 100px);
@@ -188,7 +192,7 @@
         return
 
       board[cell_id] = current_player
-      event.target.innerText = current_player
+      event.target.innerHTML = f"<span class='ttt-fill'>{current_player}</span>"
 
       winner = check_win()
       if winner:
